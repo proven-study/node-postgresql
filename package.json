@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node --env-file=.env src/index.js",
-    "dev": "nodemon --env-file=.env src/index.js"
+    "dev": "nodemon --env-file=.env src/index.js",
+    "migrate": "npx sequelize-cli db:migrate --config src/database/config/config.json --migrations-path src/database/migrations"
   },
   "keywords": [
     "node",
